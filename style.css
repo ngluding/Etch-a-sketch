@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.board {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+}
+
+.colour {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    align-items: center;
+    padding: 5px;
+    margin-top: -26em;
+    margin-right: 45em;
+}
+
+.bottom {
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+.colour-button {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 5px 0 5px 0;
+    padding-bottom: 15px;
+    width: 120px;
+}
+
+button {
+    margin: 0 8px 0 8px;
+}
+/* 
+.board > div:hover {
+    background-color: black;
+} */
+
+/* .grid {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+} */
+
+.grid-20 {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.grid-20 > div {
+    height: auto;
+    width: auto;
+    border: solid 1px black;
+}
+
+.grid-25 {
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+}
+
+.grid-25 > div {
+    height: auto;
+    width: auto;
+    border: solid 1px black;
+}
+
+.grid-30 {
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.grid-30 > div {
+    height: auto;
+    width: auto;
+    border: solid 1px black;
+}
+
+.grid-35 {
+    grid-template-columns: repeat(35, 1fr);
+    grid-template-rows: repeat(35, 1fr);
+}
+
+.grid-35 > div {
+    height: auto;
+    width: auto;
+    border: solid 1px black;
+}
