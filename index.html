@@ -9,17 +9,28 @@
 </head>
 
 <body>
-    <h1>Etch-A-Sketch</h1>
-    <div class="board"></div>
-    <section class="colour">
-        <h2>Pick Your Colour</h2>
-        <span class="colour-button">
-            <button>Black</button>
-            <button>RBG</button>
-            <button>Shade</button>
-            <button>Random</button>
-        </span>
-    </section>
+    <header>
+        <h1>Etch-A-Sketch</h1>
+    </header>
+    <div class="middle">
+        <div class="colour">
+            <h2>Pick Your Colour</h2>
+            <div class="colour-button">
+                <button onclick="changeColour('black')">Black</button>
+                <button onclick="changeColour('shade')">Shade</button>
+                <button onclick="changeColour('random')">Random</button>
+                <div class="hex-option">
+                    <p>Custom:</p>
+                    <input type = "color" id = "custom" onclick="changeColour('custom')">
+                </div>
+            </div>
+        </div>
+        <div class="board"></div>
+        <div>
+            <h2>Try Again?</h2>
+            <button onclick="resetBoard()">Reset</button>
+        </div>
+    </div>
     <section class="bottom">
         <h2>Pick Your Pixel Size</h2>
         <button class="grid-20">20x20</button>
