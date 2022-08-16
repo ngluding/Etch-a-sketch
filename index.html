@@ -13,30 +13,34 @@
         <h1>Etch-A-Sketch</h1>
     </header>
     <div class="middle">
-        <div class="colour">
-            <h2>Pick Colour</h2>
-            <div class="colour-button">
-                <button onclick="changeColour('black')">Black</button>
-                <button onclick="changeColour('shade')">Shade</button>
-                <button onclick="changeColour('random')">Random</button>
-                <div class="hex-option">
-                    <h4>Custom:</h4>
-                    <input type = "color" id = "custom" onclick="changeColour('custom')">
+        <div class="middle-left">
+            <div class="colour">
+                <h2>Pick Colour</h2>
+                <div class="colour-button">
+                    <button onclick="changeColour('black')">Black</button>
+                    <button onclick="changeColour('shade')">Shade</button>
+                    <button onclick="changeColour('random')">Random</button>
+                    <div class="hex-option">
+                        <h4>Custom:</h4>
+                        <input type = "color" id = "custom" onclick="changeColour('custom')">
+                    </div>
                 </div>
+            </div>
+            <div class="reset">
+                <h2>Try Again?</h2>
+                <button onclick="resetBoard()">Reset</button>
             </div>
         </div>
         <div class="board"></div>
-        <div class="reset">
-            <h2>Try Again?</h2>
-            <button onclick="resetBoard()">Reset</button>
-        </div>
     </div>
     <section class="bottom">
         <h2>Pick Your Pixel Size</h2>
-        <button class="grid-20">20x20</button>
-        <button class="grid-25">25x25</button>
-        <button class="grid-30">30x30</button>
-        <button class="grid-35">35x35</button>
+        <div class="bottom-button">
+            <button class="grid-20">20x20</button>
+            <button class="grid-25">25x25</button>
+            <button class="grid-30">30x30</button>
+            <button class="grid-35">35x35</button>
+        </div>
     </section>
 </body>
 
