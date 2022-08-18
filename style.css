@@ -30,8 +30,8 @@ body {
     align-items: center;
     gap: 10px;
     position: absolute;
-    left: 0;
-    padding-left: 20px;
+    right: 0;
+    padding-right: 20px;
 }
 
 .colour {
@@ -180,36 +180,51 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+
+    body {
+        gap:10px;
+    }
+
     .board {
-        width: 55vw;
-        height: 55vw;
+        width: 75vw;
+        height: 75vw;
         border: 4px solid black;
     }
     
     .middle {
-        margin-right: 70px;
+        flex-direction: column;
     }
     
     .middle-left {
+        flex-direction: row;
         gap: 10px;
         position: static;
+        align-items: center;
         left: 0;
         padding-left: 20px;
     }
 
+    .bottom-button {
+        margin-top: 5px;
+    } 
+
     .colour {
-        width: 13vw;
-        height: 22vw;
+        width: 50vw;
+        height: 13vw;
+        padding: 8px;
+        gap: 8px;
         border: 3px solid black;
-        padding: 7px;
+        align-items: center;
         border-radius: 10px;
     }
     
     .reset {
         border: 3px solid black;
         border-radius: 10px;
+        padding-bottom: 5px;
+        padding-top: 10px;
         width: 12vw;
-        height: 8vw;
+        height: 14vw;;
     }
 
     .hex-option {
@@ -220,12 +235,12 @@ button:hover {
     #custom {
         border: 2px solid black;
         background-color: white;
-        width: 3.5vw;
-        height: 1.5vh;
+        width: 5.5vw;
+        height: 3vh;
     }
 
-    .middle > h2 {
-        font-size: 1.5vw;
+    .colour > h2 {
+        font-size: 4vw;
     }
     
     .middle > h4 {
@@ -233,13 +248,26 @@ button:hover {
     }
 
     .colour-button {
-        gap: 7px;
-        width: 120px;
+        flex-direction: row;
+        gap: 10px;
+        width: 150px;
+        justify-content: center;
+        font-size: 1vw;
+    }
+
+
+    .colour-button > button {
+        width: 140px;
     }
 
     .bottom-button {
         display: flex;
         gap: 10px;
+    }
+
+    h2 {
+        font-size: 3vw;;
+        margin: 0;
     }
 }
 
